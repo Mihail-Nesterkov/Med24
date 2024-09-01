@@ -1,0 +1,132 @@
+.economCards {
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 40px;
+    width: 100%;
+}
+@media screen and (max-width: 700px){
+    .economCards {
+        flex-direction: column;
+    }
+}
+.economCards .economicCard:first-child {
+    margin-right: 30px;
+}
+.economicCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 30px 30px 30px;
+    border: 1px solid var(--border-red);
+    border-radius: 12px;
+}
+@media screen and (max-width: 1310px) and (min-width: 701px){
+    .economicCard {
+        width: 40%;
+    }
+    .economCards {
+        justify-content: center;
+    }
+    .economCardHeading {
+        width: 90%;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width: 700px){
+    .economCards .economicCard:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .economicCard {
+        padding: 20px;
+    }
+}
+.economCardIcon {
+    position: absolute;
+    top: -20px;
+    right: 30px;
+}
+@media screen and (max-width: 400px){
+    .economCardIcon {
+        top: -9px;
+        right: 20px;
+        width: 40px;
+    }
+}
+.economCardHeading {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--text-red-color);
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 700px){
+    .economCardHeading {
+        max-width: 90%;
+        overflow-x: hidden;
+        margin-bottom: 12px;
+    }
+}
+.economCardTextS {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text-gr-color);
+}
+@media screen and (max-width: 360px){
+    .economCardTextS {
+        font-size: 14px;
+    }
+}
+.economCardTextS.dark {
+    color: var(--text-gr-dark);
+    background: none;
+}
+.economCardTextP {
+    font-weight: 400;
+}
+.economRedBlock {
+    display: flex;
+    padding: 30px 40px;
+    background-color: var(--background-red);
+    border-radius: 14px;
+    max-width: 1296px;
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 360px){
+    .economRedBlock {
+        padding: 18px;
+        margin-bottom: 20px;
+    }
+}
+.economSign {
+    border-right: 1px dashed rgba(255, 255, 255, 40%);
+    margin-right: 30px;
+}
+.economSign img {
+    margin-right: 30px;
+}
+@media screen and (max-width: 360px){
+    .economSign {
+        margin-right: 15px;
+    }
+    .economSign img {
+        margin-right: 15px;
+    }
+}
+.textP {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-FFF-color);
+}
+@media screen and (max-width: 360px){
+    .textP {
+        font-size: 14px;
+    }
+}
+.textS {
+    font-weight: 700;
+    color: var(--text-FFF-color);
+}

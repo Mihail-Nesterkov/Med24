@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    max-width: 1920px;
+}
+.main img {
+    width: 74%;
+    margin: 355px auto;
+}
+@media screen and (max-width: 800px){
+    .main img {
+        margin: 150px auto;
+    }
+}
+.main .dark {
+    background-color: #565252;
+}

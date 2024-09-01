@@ -1,0 +1,113 @@
+.videoBlock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+}
+.vidImg {
+    border-radius: 14px;
+    width: 100%;
+}
+@media screen and (max-width: 995px) and (min-width: 361px){
+    .vidImg {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px){
+    .directionMobVid {
+        width: 336px;
+        height: 260px;
+    }
+    .medicineMobVid {
+        width: 227px;
+        height: 330px;
+    }
+    .doctorsMobVid {
+        width: 296px;
+        height: 220px;
+    }
+    .whatMobVid {
+        width: 296px;
+        height: 201px;
+    }
+    .problemMobVid {
+        width: 306px;
+        height: 208px;
+    }
+    .schemeMobVid {
+        width: 336px;
+        height: 168px;
+        margin-top: 20px;
+    }
+    .economMobVid {
+        width: 336px;
+        height: 250px;
+    }
+}
+.runButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--background-red);
+    cursor: pointer;
+}
+.MobVid {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--background-red);
+    cursor: pointer;
+}
+@media screen and (max-width: 855px){
+    .runButton {
+        display: none;
+    }
+    .MobVid {
+        display: flex;
+        width: 70px;
+        height: 70px;
+    }
+}
+.runBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.runBlock p:first-of-type {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-FFF-color);
+    max-width: 337px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 600px){
+    .runBlock p:first-of-type {
+        font-size: 16px;
+    }
+}
+.runBlock p:last-of-type {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-FFF-color);
+    margin-top: 20px;
+}
+@media screen and (max-width: 600px){
+    .runBlock p:last-of-type {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.mainClient {
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(225, 217, 217, 0.85);
+}
+@media screen and (max-width: 1919px){
+    .mainClient {
+        width: 100vw;
+    }
+}
+.mainClient.dark {
+    background-color: var(--background-client-dark);
+}
+.banner {
+    min-width: max-content;
+}
+

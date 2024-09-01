@@ -1,0 +1,105 @@
+.directionCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    border-radius: 14px;
+}
+@media screen and (max-width: 1919px){
+    .directionCards {
+        width: 100%;
+    }
+}
+.directionCard {
+    display: flex;
+    padding: 40px 30px;
+    cursor: pointer;
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px dashed #F5EAEB;
+}
+@media screen and (max-width: 855px){
+    .directionCard {
+        min-width: auto;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+.directionCard:hover {
+    background-color: rgba(178, 12, 28, 10%);
+}
+.directionCardActive {
+    background-color: rgba(178, 12, 28, 2%);
+}
+.directionCardText {
+    padding: 20px 0;
+}
+.directionCardHeading {
+    display: flex;
+    align-items: flex-start;
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-red-color);
+    margin-bottom: 16px;
+}
+@media screen and (max-width: 970px){
+    .directionCardHeading {
+        font-size: 14px;
+    }
+}
+.directionCardHeading img {
+    margin-right: 15px;
+}
+.directionCardtextP {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-gr-color);
+}
+@media screen and (max-width: 1280px) and (min-width: 361px){
+    .directionCardtextP {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 360px){
+    .directionCardtextP {
+        font-size: 13px;
+    }
+}
+.directionCardtextP.dark {
+    color: var(--text-gr-dark);
+    background: none;
+}
+.directionCardImg {
+    width: 250px;
+    height: 152px;
+    background-color: rgba(68, 68, 68, 0.8);
+    border-radius: 14px;
+    opacity: 10%;
+}
+@media screen and (max-width: 1150px) and (min-width: 361px){
+    .directionCardImg {
+        width: 180px;
+    }
+}
+@media screen and (max-width: 360px){
+    .directionCardImg {
+        width: 126px;
+        height: 76px;
+        background-size: 100%;
+    }
+}
+.directionCardActive .directionCardImg {
+    opacity: 100%;
+}
+.directionCardContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+@media screen and (max-width: 360px){
+    .directionCardContent {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

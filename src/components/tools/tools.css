@@ -1,0 +1,181 @@
+.mainToolsHeading {
+    max-width: 820px;
+    text-align: center;
+}
+.toolsButtons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px dashed var(--text-red-color);
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 700px){
+    .toolsButtons {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+    .toolsButtons .toolsButton:nth-child(odd) {
+        margin-right: 20px;
+        width: 171px;
+    }
+}
+.toolsButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+@media screen and (max-width: 700px){
+    .toolsButton {
+        margin-bottom: 20px;
+    }
+}
+.toolsButtonNum {
+    padding: 14px 18px;
+    background-color: rgba(68, 68, 68, 0.02);
+    border-radius: 10px;
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 13px;
+    color: rgba(68, 68, 68, 0.3);
+}
+@media screen and (max-width: 1000px){
+    .toolsButtonNum {
+        padding: 7px 6px;
+        font-size: 8px;
+    }
+}
+.toolsButtonNum.dark {
+    color: var(--text-gr-dark);
+}
+.dash {
+    background-color: rgba(68, 68, 68, 30%);
+    width: 30px;
+    height: 1px;
+    margin: 0 15px;
+}
+@media screen and (max-width: 1000px){
+    .dash {
+        width: 4px;
+        margin: 0 6px;
+    }
+}
+.dash.dark {
+    background-color: var(--text-gr-dark);
+}
+.toolsButtonHead {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--text-gr-color);
+    max-width: 141px;
+}
+@media screen and (max-width: 1000px){
+    .toolsButtonHead {
+        font-size: 13px;
+        width: min-content;
+    }
+}
+.toolsButtonHead.dark {
+    color: var(--text-gr-dark);
+}
+.toolsButtonActive p:first-of-type {
+    background-color: var(--text-red-color);
+    color: var(--text-FFF-color);
+}
+.toolsButtonActive p:last-of-type {
+    color: var(--text-red-color);
+}
+.itemButtText {
+    padding: 30px;
+    background-color: var(--backgroundColor-FFF);
+    border-radius: 14px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+@media screen and (max-width: 360px){
+    .itemButtText {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
+.itemButtText.dark {
+    background-color: var(--backgroundColor-main-content-block-dark);
+}
+.itemButtText.dark p {
+    color: var(--text-gr-dark);
+}
+.itemButtTextHeading {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--text-gr-color);
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 360px){
+    .itemButtTextHeading {
+        font-size: 15px;
+    }
+}
+.itemButtTextSub {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-gr-color);
+}
+.toolsContent {
+    display: flex;
+    border-radius: 14px;
+    padding: 45px 50px;
+    background-color: var(--text-red-color);
+}
+.leftToolsContent {
+    margin-right: 50px;
+    max-width: 746px;
+}
+.toolsHeadingTextP {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 28px;
+    color: var(--text-FFF-color);
+}
+.toolsHeadingTextS {
+    font-weight: 700;
+}
+.toolsSeparation {
+    width: 200px;
+    height: 1px;
+    border-bottom: 1px dashed var(--border-FFF);
+    margin: 30px 0;
+}
+.toolsContentText {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: var(--text-FFF-color);
+}
+.rightToolsContent {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+@media screen and (max-width: 800px){
+    .toolsContent {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .toolsHeadingTextP {
+        font-size: 18px;
+    }
+    .toolsContentText {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .rightToolsContent img {
+        width: 100%;
+    }
+}

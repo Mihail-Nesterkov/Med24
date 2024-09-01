@@ -1,0 +1,73 @@
+.partnersCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.partnersCards:last-child{
+    margin-right: 0;
+}
+.partnersCards div:nth-child(4n) {
+    margin-right: 0;
+}
+.partnersCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    border: 1px solid rgba(68, 68, 68, 0.2);
+    border-radius: 14px;
+    padding: 49px 52px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    max-width: 304px;
+}
+@media screen and (max-width: 1905px) and (min-width: 361px){
+    .partnersCard {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 1050px) and (min-width: 361px){
+    .partnersCard {
+        padding: 30px;
+    }
+    .partnersCard img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 360px){
+    .partnersCard {
+        padding: 26px 27px;
+        width: 48%;
+        margin-bottom: 10px;
+    }
+    .partnersCard img {
+        width: 100%;
+    }
+}
+.partnersCardsAll div:nth-child(n+5) {
+    display: none;
+}
+@media screen and (max-width: 360px){
+    .partnersCard:nth-child(odd) {
+        margin-right: 10px;
+    }
+    .partnersCard:nth-child(even) {
+        margin-right: 0;
+    }
+}
+.partnersButtonAll {
+    font-family: Unbounded;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--text-red-color);
+    padding: 20px 30px;
+    border: 1px dashed var(--border-red);
+    border-radius: 14px;
+    cursor: pointer;
+}
+@media screen  and (max-width: 360px){
+    .partnersButtonAll {
+        width: fit-content;
+        padding: 15px 20px;
+    }
+}

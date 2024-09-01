@@ -1,0 +1,168 @@
+.medicineMain {
+    position: relative;
+    padding-bottom: 130px;
+}
+@media screen and (max-width: 360px){
+    .medicineMain {
+        padding-bottom: 110px;
+    }
+}
+.medicineButtons {
+    padding: 20px;
+    background-color: var(--background-main-block);
+    margin-top: 40px;
+    border-radius: 18px;
+    z-index: 4;
+}
+@media screen and (max-width: 650px){
+    .medicineButtons {
+        display: flex;
+        margin-top: 5px;
+    }
+    .medicineButtons button {
+        flex-wrap: wrap;
+        max-width: 140px;
+        padding: 12px 22px;
+        font-size: 9px;
+    }
+}
+.medicineButtons button:first-of-type {
+    margin-right: 24px;
+}
+.medicineCardButton {
+    padding: 22px 0;
+    width: 278px;
+    border-radius: 14px;
+    background: var(--background-botton-noActive);
+    border: none;
+    text-transform: uppercase;
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--text-red-color);
+    cursor: pointer;
+}
+.medicineCardButtonActive {
+    background: var(--background-botton);
+    color: var(--text-FFF-color);
+}
+.medicineBlockContent {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    max-height: 600px;
+    border-radius: 30px;
+    background-color: var(--backgroundColor-FFF);
+    margin-top: -53px;
+    padding: 103px 80px 71px 80px;
+}
+@media screen and (max-width: 855px) and (min-width: 361px){
+    .medicineBlockContent {
+        padding: 103px 0 71px 0;
+        max-height: fit-content;
+    }
+}
+@media screen and (max-width: 360px){
+    .medicineBlockContent {
+        display: flex;
+        padding: 54px 25px;
+        max-height: none;
+    }
+}
+.medicineBlockContent.dark {
+    background-color: var(--backgroundColor-main-content-block-dark);
+}
+.medicineBlockContent.dark p {
+    color: var(--text-gr-dark);
+    background: none;
+}
+.medicineBlockContentText {
+    max-width: 63%;
+    margin-right: 40px;
+}
+@media screen and (max-width: 1060px) and (min-width: 856px){
+    .medicineBlockContentText {
+        margin-right: 0;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 855px){
+    .medicineBlockContentText {
+        margin-right: 0;
+        max-width: none;
+    }
+}
+.medicineBlockContentHeading {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--text-gr-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 1060px) and (min-width: 361px){
+    .medicineBlockContentHeading {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 360px){
+    .medicineBlockContentHeading {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+.medicineContentTextItem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+.medicineContentTextItem p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-gr-color);
+}
+@media screen and (max-width: 1060px) and (min-width: 361px){
+    .medicineContentTextItem p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 360px){
+    .medicineContentTextItem {
+        margin-bottom: 15px;
+    }
+    .medicineContentTextItem p {
+        font-size: 13px;
+    }
+    .medicineBlockContentText div:last-of-type {
+        margin-bottom: 236px;
+    }
+}
+.medicineContentTextItem img {
+    background-color: var(--background-botton-noActive);
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+@media screen and (max-width: 855px) and (min-width: 361px){
+    .medicineContentTextItem img {
+        padding: 3px;
+    }
+}
+.medicineVideo {
+    position: absolute;
+    /*top: 103px;*/
+    /*right: 80px;*/
+}
+.medicineVideo {
+    right: 20px;
+    bottom: -60px;
+    top: auto;
+}
+@media screen and (max-width: 855px) and (min-width: 361px){
+    .medicineVideo {
+        display: none;
+    }
+}

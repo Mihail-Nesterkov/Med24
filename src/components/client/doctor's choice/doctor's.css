@@ -1,0 +1,169 @@
+.doctorsContentBlock {
+    display: flex;
+    width: 100%;
+}
+@media screen and (max-width: 650px){
+    .doctorsContentBlock {
+        flex-direction: column;
+    }
+}
+.doctorsContentBlock.dark p {
+    color: var(--text-gr-dark);
+    background: none;
+}
+.doctorsContentNav {
+    padding: 30px 0;
+}
+@media screen and (max-width: 650px){
+    .doctorsContentNav {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .doctorsContentNav div:nth-child(2) {
+        width: min-content;
+    }
+}
+.itemNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px 0 25px;
+    border-radius: 14px 0 0 14px;
+    border: 1px dashed var(--text-gr-color);
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: var(--background-botton-noActive);
+}
+@media screen and (max-width: 970px) and (min-width: 361px){
+    .itemNav {
+        padding: 0 5px;
+    }
+}
+@media screen and (max-width: 650px){
+    .itemNav {
+        box-sizing: border-box;
+        border-radius: 14px;
+        padding: 16px 15px;
+        height: 50px;
+        border: none;
+        margin-right: 8px;
+    }
+    .itemNav p:last-of-type {
+        display: none;
+    }
+}
+.textNav {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--text-gr-color);
+    max-width: 183px;
+}
+@media screen and (max-width: 1060px) and (min-width: 361px){
+    .textNav {
+        font-size: 13px;
+    }
+    .itemNav {
+        height: 60px;
+    }
+}
+@media screen and (max-width: 360px){
+    .textNav {
+        max-width: 278px;
+        font-size: 13px;
+    }
+}
+.itemNav p:last-of-type {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 10px;
+    transform: rotate(-90deg);
+}
+.itemNavActive {
+    background: var(--background-botton);
+    border: none;
+}
+.itemNavActive p {
+    color: var(--text-FFF-color);
+}
+.doctorsCntentText {
+    width: 89%;
+    background-color: var(--backgroundColor-FFF);
+    border-radius: 14px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.doctorsCntentText div:first-child {
+    margin: 0 0 40px 0;
+}
+@media screen and (max-width: 1835px) and (min-width: 651px){
+    .doctorsCntentText {
+        width: 70%;
+
+    }
+}
+@media screen and (max-width: 650px){
+    .doctorsCntentText div:first-child {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+    .doctorsCntentText {
+        width: 100%;
+        padding: 3px;
+    }
+}
+@media screen and (max-width: 360px){
+    .doctorsCntentText {
+        padding: 15px 20px;
+    }
+}
+.doctorsText {
+    margin: 40px 0;
+}
+@media screen and (max-width: 360px){
+    .doctorsText {
+        margin: 20px 0;
+    }
+}
+.doctorsTextP {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-gr-color);
+}
+@media screen and (max-width: 1060px) and (min-width: 361px){
+    .doctorsTextP {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 360px){
+    .doctorsTextP {
+        font-size: 14px;
+    }
+}
+.doctorsTextS {
+    font-weight: 700;
+}
+.doctorsContentCard {
+    display: flex;
+}
+@media screen and (max-width: 550px){
+    .doctorsContentCard {
+        flex-direction: column;
+    }
+}
+.doctorsContentCard p {
+    padding: 30px;
+    border: 1px dashed var(--text-red-color);
+    border-radius: 12px;
+}
+.doctorsContentCard p:first-of-type {
+    margin-right: 30px;
+}
+@media screen and (max-width: 550px){
+    .doctorsContentCard p:first-of-type {
+        margin: 0 0 10px 0;
+    }
+}

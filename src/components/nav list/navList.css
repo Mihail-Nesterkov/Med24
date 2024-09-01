@@ -1,0 +1,31 @@
+.firstHeadNav {
+    display: flex;
+    margin: 16px 0;
+    padding: 0;
+    background-color: var(--backgroundColor-gr);
+}
+.navLi {
+    list-style-type: none;
+    margin-right: 20px;
+}
+.navl {
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 15px;
+}
+@media screen and (max-width: 855px){
+    .firstHeadNav {
+        display: none;
+    }
+    .mobNav {
+        margin: 0;
+        padding: 16px 12px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .navl {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: block;
+    width: 1920px;
+}
+@media screen and (max-width: 1919px){
+    .header {
+        width: 100vw;
+    }
+    .mainClient {
+        width: 100vw;
+    }
+}
+.firstHead {
+    display: flex;
+    justify-content: center;
+    background-color: #444444;
+}
+
+.secondHeadNav {
+    list-style-type: none;
+    display: flex;
+    margin: 16px 0;
+    padding: 0;
+    gap: 25px;
+}
+.liMap {
+    color: #FFFFFF;
+    gap: 7px;
+}
+.butEnter {
+    color: #FFFFFF;
+}
+.butEnter img {
+    margin-right: 8px;
+}
+.secondHead {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+.secondHeadContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+@media screen and (max-width: 855px){
+    .secondHeadContent {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+}
+.logo {
+    padding: 0;
+    margin: 16px 0;
+}
+.logoBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.butMenuHeader {
+    padding: 13px 15px;
+}
+.tel {
+    font-size: 15px;
+}
+.headerWrrap {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 67%;
+}
+@media screen and (max-width: 1780px) and (min-width: 367px){
+    .headerWrrap {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 366px){
+    .headerWrrap {
+        width: 95%;
+    }
+    .secondHeadNav {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+.language {
+
+}
+

@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Header from "./components/header/header";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Clinic from "./pages/clinic/clinic";
+import Main from "./components/main/main";
+import Footer from "./components/footer/footer";
+import {Provider} from "react-redux";
+import {store} from "./redux/store";
+import Client from "./pages/client/client";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Header/>
+        <Routes>
+          <Route path={"/"} element={<Main/>}></Route>
+          <Route exact path={"/clinic"} element={<Clinic/>}></Route>
+          <Route exact path={"/client"} element={<Client/>}></Route>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </Provider>
+
   );
 }
 

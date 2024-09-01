@@ -1,0 +1,111 @@
+.folders {
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    margin: 0 auto;
+    margin-top: -114px;
+}
+@media screen and (max-width: 985px) and (min-width: 551px){
+    .folders {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        max-width: 90%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 550px){
+    .folders {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        max-width: none;
+        justify-content: space-between;
+    }
+    .folders .bannerFolder:nth-child(odd) {
+        margin-right: 10px;
+    }
+}
+.bannerFolder {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 203px;
+    margin-right: 15px;
+}
+@media screen and (max-height: 550px){
+    .bannerFolder {
+        max-width: 163px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 360px){
+    .bannerFolder {
+        /*max-width: 163px;*/
+
+        /*margin-bottom: 10px;*/
+    }
+
+    .bannerFolder img {
+        max-width: 163px;
+    }
+}
+.iconFolder {
+    background-color: var(--background-red);
+    border-radius: 14px;
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 50px;
+    z-index: 2;
+}
+@media screen and (max-width: 1150px){
+    .iconFolder {
+        width: 50px;
+        height: 40px;
+    }
+    .iconFolder img {
+        width: 14px;
+        padding: 12px 17px;
+    }
+}
+.folderBookmark {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+.textFolder {
+    display: flex;
+    padding: 20px;
+    border-radius: 14px;
+    border: none;
+    background-color: var(--backgroundColor-FFF);
+    text-align: left;
+    z-index: 2;
+    height: 70%;
+}
+.textFolder.dark {
+    background-color: var(--backgroundColor-main-content-block-dark);
+}
+.textFolder.dark p {
+    color: var(--text-gr-dark);
+    background: none;
+}
+.bannerFolderTextP {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text-gr-color);
+}
+@media screen and (max-width: 1150px){
+    .bannerFolderTextP {
+        font-size: 13px;
+    }
+}
+.bannerFolderTextS {
+    font-weight: 400;
+}

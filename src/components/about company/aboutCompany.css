@@ -1,0 +1,107 @@
+.cardCompany {
+    margin-right: 26px;
+    width: 416px;
+    min-height: 460px;
+    text-align: center;
+}
+@media screen and (max-width: 1310px){
+    .cardCompany {
+        width: 100%;
+        margin-bottom: 26px;
+        min-height: auto;
+    }
+}
+.fon {
+    background-color: rgba(68, 68, 68, 10%);
+    padding: 11% 15% 20.5% 15%;
+    max-width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 14px 14px 0 0;
+}
+@media screen and (max-width: 360px){
+    .fon {
+        max-width: 72%;
+    }
+    .fon img {
+        width: 92%;
+    }
+}
+.fon.dark {
+    background-color: var(--backgroundColor-main-content-block-dark);
+}
+.cardsCompany {
+    display: flex;
+}
+@media screen and (max-width: 1310px){
+    .cardsCompany {
+        flex-direction: column;
+    }
+}
+.textCardCompany {
+    z-index: 10;
+    border-radius: 14px;
+    text-align: left;
+    background-color: var(--backgroundColor-FFF);
+    padding: 10px 40px 40px 40px;
+    max-height: 286px;
+    position: relative;
+}
+@media screen and (max-width: 360px){
+    .textCardCompany {
+        padding: 25px 25px 20px 25px;
+    }
+}
+.textCardCompany.dark {
+    background-color: var(--backgroundColor-main-content-block-dark);
+}
+.textCardHeading {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 18px;
+    color: #B20C1C;
+}
+@media screen and (max-width: 360px){
+    .textCardHeading {
+        font-size: 14px;
+    }
+}
+.wrapHeading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.wrapHeading img {
+    margin-right: 15px;
+}
+.WBlock {
+    z-index: -5;
+    width: 100%;
+    position: absolute;
+    top: -24px;
+    left: 0;
+}
+.WBlock img {
+    width: 100%;
+}
+.companyTextS {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-gr-color);
+}
+@media screen and (max-width: 360px){
+    .companyTextS {
+        font-size: 14px;
+    }
+    .WBlock img {
+        width: 100%;
+    }
+}
+.companyTextS.dark {
+    color: var(--text-gr-dark);
+    background: none;
+}
+.companyTextP {
+    font-weight: 700;
+}

@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #444444;
+    width: 1920px;
+    padding: 21px 0;
+}
+.footerWrapp {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 67%;
+}
+@media screen and (max-width: 1919px){
+    .footer {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 855px){
+    .footer {
+        padding: 40px 70px;
+        box-sizing: border-box;
+    }
+    .footerWrapp {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .logoFooter {
+        margin-bottom: 29px;
+    }
+    .footerWrapp .secondHeadNavRight {
+        flex-direction: column;
+    }
+    .footerWrapp .secondHeadNavRight .orderTel {
+        display: initial;
+        margin: 9px 0 20px 0;
+    }
+}

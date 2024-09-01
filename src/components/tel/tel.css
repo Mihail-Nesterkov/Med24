@@ -1,0 +1,70 @@
+.secondHeadNavRight {
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 565px){
+    .secondHeadNavRight {
+        justify-content: space-between;
+    }
+}
+#navTel {
+    border: none;
+    margin: 11.5px 0 11.5px 10px;
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 15px;
+}
+@media screen and (max-width: 360px){
+    #navTel {
+        font-size: 13px;
+    }
+}
+.orderTel {
+    width: 164px;
+    height: 42px;
+    margin: 2px 50px;
+    padding: 0 20px;
+    font-size: 10px;
+}
+@media screen and  (max-width: 565px){
+    .orderTel {
+        display: none;
+    }
+}
+.blockNav {
+    display: flex;
+    align-items: center;
+}
+#lang {
+    font-family: Unbounded;
+    font-weight: 900;
+    font-size: 12px;
+    padding: 15px;
+    border-radius: 14px;
+    border: 1px solid rgba(68, 68, 68, 0.2);
+}
+@media screen and (max-width: 360px){
+    #lang {
+        font-weight: 700;
+        font-size: 10px;
+        padding: 10px 0 10px 10px;
+    }
+    .iconNight {
+        width: 10px;
+        padding: 11px;
+    }
+}
+.butHeader{
+    margin-left: 10px;
+    background-color: var(--backgroundColor-FFF);
+    border: 1px solid rgba(68, 68, 68, 0.2);
+    border-radius: 14px;
+}
+.butHeader img {
+    margin: 15px;
+}
+@media screen and (max-width: 360px){
+    .butHeader img {
+        margin: 0;
+    }
+}

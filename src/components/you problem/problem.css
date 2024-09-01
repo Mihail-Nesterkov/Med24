@@ -1,0 +1,203 @@
+.blockProblem * {
+    margin: 0;
+    padding: 0;
+}
+.blockProblemHeading {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 28px;
+    color: #444444;
+    margin-bottom: 40px;
+}
+.problemContent {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1919px){
+    .problemContent {
+        width: 100%;
+    }
+}
+.tabs {
+    display: flex;
+    justify-content: left;
+    margin-top: 25px;
+}
+.tabsItem {
+    display: flex;
+    padding: 20px 25px 18px 25px;
+    justify-content: center;
+    margin-right: 10px;
+    max-width: 231px;
+    background-color: #dad5d5;
+    border-left: 1px dashed #444444;
+    border-top: 1px dashed #444444;
+    border-right: 1px dashed #444444;
+    border-radius: 14px 14px 0 0;
+    cursor: pointer;
+}
+@media screen and (max-width: 995px){
+    .tabsTems {
+        display: none;
+    }
+    .tabsItem {
+        padding: 18px 14px;
+        margin-right: 4px;
+    }
+}
+#problemItemDark {
+    background-color: #363333;
+}
+.tabsItemNumber {
+    display: block;
+    margin-right: 16px;
+}
+@media screen and (max-width: 360px){
+    .tabsItemNumber {
+        margin-right: 0;
+    }
+}
+.tabsItemNumber p:first-of-type {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--text-red-color);
+    margin-top: 4px;
+}
+@media screen and (max-width: 995px){
+    .tabsItemNumber p:first-of-type {
+        display: none;
+    }
+}
+.tabsItemNumber p:last-of-type {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--text-red-color);
+}
+@media screen and (max-width: 995px){
+    .tabsItemNumber p:last-of-type {
+        font-size: 10px;
+    }
+}
+.tabsTems {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-gr-color)
+}
+@media screen and (max-width: 995px){
+    .tabsTems {
+        font-size: 13px;
+    }
+}
+.tabsTems.dark {
+    color: var(--text-gr-dark);
+    background: none;
+}
+.tabs .active {
+    background-color: var(--backgroundColor-FFF);
+    border: none;
+}
+@media screen and (max-width: 995px){
+    .tabs .active .tabsTems {
+        display: flex;
+        max-width: 90px;
+    }
+    .tabs .active .problemNumber {
+        margin-right: 18px;
+    }
+}
+#problemItemDark.active {
+    background-color: var(--backgroundColor-main-content-block-dark);
+}
+.contentProblem {
+    display: flex;
+    box-sizing: border-box;
+    min-width: 1296px;
+    justify-content: center;
+    padding: 60px;
+    border-radius: 0 14px 14px 14px;
+    background-color: var(--backgroundColor-FFF);
+}
+@media screen and (max-width: 1310px) and (min-width: 361px){
+    .contentProblem {
+        min-width: 100%;
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 360px){
+    .contentProblem {
+        min-width: auto;
+        width: 100%;
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+.contentProblem.dark {
+    background-color: var(--backgroundColor-main-content-block-dark);
+}
+.headingProblem {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--text-gr-color);
+}
+@media screen and (max-width: 360px){
+    .headingProblem {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
+.headingProblem.dark {
+    color: var(--text-gr-dark);
+    background: none;
+}
+.textProblem {
+    border-radius: 14px;
+    border: 1px dashed var(--text-red-color);
+    margin-top: 30px;
+    padding: 25px 30px;
+}
+@media screen and (max-width: 360px){
+    .textProblem {
+        margin-top: 15px;
+        padding: 20px;
+    }
+}
+.textProblem p:first-of-type {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--text-red-color);
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 360px){
+    .textProblem p:first-of-type {
+        font-size: 12px;
+    }
+}
+.textProblem p:last-of-type {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-gr-color);
+}
+@media screen and (max-width: 360px){
+    .textProblem p:last-of-type {
+        font-size: 14px;
+    }
+}
+.textProblem.dark p:last-of-type {
+    color: var(--text-gr-dark);
+}
+.descriptionProblem {
+    margin-left: 60px;
+}
+@media screen and (max-width: 360px){
+    .descriptionProblem {
+        margin-left: 0;
+        max-width: 306px;
+    }
+}

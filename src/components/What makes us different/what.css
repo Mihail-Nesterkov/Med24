@@ -1,0 +1,256 @@
+.whatBlock {
+    padding: 40px 52px 70px 52px;
+    box-sizing: border-box;
+    align-items: center;
+}
+@media screen and (max-width: 360px){
+    .whatBlock {
+        padding: 20px 20px 30px 20px;
+    }
+}
+.whatBlockNav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(178, 12, 28, 0.2);
+
+}
+.whatBlockNavItem {
+    display: flex;
+
+}
+.whatBlockNavItems ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+@media screen and (max-width: 360px){
+    .whatBlockNavItems ul {
+        /*overflow-x: hidden;*/
+        width: 100%;
+    }
+}
+.whatBlockNavItems ul li {
+    padding-bottom: 11px;
+}
+.whatBlockNav img {
+    padding-bottom: 11px;
+}
+.whatNavName {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-gr-color);
+    cursor: pointer;
+}
+@media screen and (max-width: 360px){
+    .whatNavName {
+        font-size: 9px;
+    }
+}
+.whatNavName.dark {
+    color: var(--text-gr-dark);
+    background: none;
+}
+.whatNavName.whatNavNameActive {
+    color: var(--text-red-color);
+    border-bottom: 1px solid var(--text-red-color);
+}
+.whatBlockNavItems ul li:last-child {
+    display: none;
+}
+.whatBlockNavItems ul li:nth-child(even) {
+    margin: 0 36px;
+}
+.whatBlockNav {
+    width: 100%;
+    position: relative;
+}
+@media screen and (max-width: 360px){
+    .whatBlockNav {
+        width: 100%;
+    }
+    .whatBlockNavItems ul li:nth-child(even) {
+        margin: 0 10px;
+    }
+}
+.whatBlockNavItems ul li {
+    text-wrap: nowrap;
+}
+.whatBlockNavItems {
+    width: 100%;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 360px){
+    .whatBlockNavItems {
+        width: 100%;
+    }
+}
+.whatBlockNav img:first-of-type{
+    margin-right: 36px;
+}
+.whatBlockNav img:last-of-type{
+    margin-left: 36px;
+}
+.whatBlockContent {
+    display: flex;
+    margin-top: 70px;
+}
+@media screen and (max-width: 650px){
+    .whatBlockContent {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+.whatBlockContentSepar {
+    width: 1px;
+    border-right: 1px dashed rgba(178, 12, 28, 0.4);
+    margin: 0 40px;
+}
+@media screen and (max-width: 360px){
+    .whatBlockContentSepar {
+        width: 100%;
+        height: 1px;
+        border-top: 1px dashed rgba(178, 12, 28, 0.4);
+        margin: 20px 0;
+    }
+}
+.whatBlockContentText {
+    display: flex;
+    flex-direction: column;
+    max-width: 585px;
+}
+.whatBlockContentText p:nth-child(2) {
+    margin: 10px 0 20px 0;
+}
+.whatBlockContentTextNum {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--text-red-color);
+}
+.whatBlockContentTextNum span {
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(178, 12, 28, 0.4);
+}
+.whatBlockContentTextHeader {
+    font-family: Unbounded;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--text-red-color);
+}
+@media screen and (max-width: 1060px) and (min-width: 361px){
+    .whatBlockContentTextHeader {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 360px){
+    .whatBlockContentTextHeader {
+        font-size: 14px;
+    }
+}
+.whatBlockContentTextText {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--text-gr-color);
+}
+@media screen and (max-width: 360px){
+    .whatBlockContentTextText {
+        font-size: 14px;
+    }
+}
+.whatBlockContentTextText.dark {
+    color: var(--text-gr-dark);
+    background: none;
+}
+.headerBlockk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1155px;
+}
+.headerBlockk p:first-of-type {
+    margin-bottom: 10px;
+}
+.headerBlockk p:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+/*------------INTERECTION-----------------*/
+
+.interactionMain {
+    position: relative;
+    padding: 50px 60px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 970px){
+    .interactionMain {
+        padding: 20px;
+        margin-bottom: 42px;
+        margin-top: 20px;
+    }
+}
+.interactionContent {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    max-width: 666px;
+}
+@media screen and (max-width: 1360px) and (min-width: 971px){
+    .interactionContent {
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 970px){
+    .interactionContent {
+        margin-right: 0;
+    }
+}
+.interactionContent p:nth-child(2) {
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 0;
+}
+@media screen and (max-width: 970px) and (min-width: 361px){
+    .interactionContent p:nth-child(2) {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 360px){
+    .interactionContent p:nth-child(2) {
+        margin-bottom: 160px;
+    }
+}
+.interactionVideo {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+}
+@media screen and (max-width: 1060px) and (min-width: 971px){
+    .interactionVideo {
+        right: 0;
+    }
+}
+@media screen and (max-width: 970px) and (min-width: 361px){
+    .interactionVideo {
+        position: initial;
+    }
+}
+@media screen and (max-width: 360px){
+    .interactionVideo {
+        top: auto;
+        right: auto;
+        bottom: -42px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
